@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.MuiButtonBase-root.MuiListItemButton-root {
+  color: #bcbec2;
+  padding: 0.5rem 0.75rem !important;
+  border-radius: 4px !important;
+  margin: 2px auto !important;
+  padding: 0.5rem 0.75rem !important;
+  text-decoration: wavy;
+}
+
+.MuiButtonBase-root.MuiListItemButton-root:hover {
+  color: #ffffff !important;
+  background: #2f3a53 !important;
+  border-radius: 4px !important;
+}
+
+.MuiButtonBase-root.MuiListItemButton-root.Mui-selected {
+  color: #ffffff !important;
+  background: #465373 !important;
+  border-radius: 4px !important;
+}
+
+.Mui-selected svg path {
+  stroke: #ffffff !important;
+}
+
+.MuiListItemIcon-root {
+  min-width: 35px !important;
+}
+
+.MuiTypography-root {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+.mainTabContainer {
+  position: sticky;
+  top: 0;
+  z-index: 98;
+}
+
+.mainTabContainer .MuiButtonBase-root.MuiTab-root {
+  text-transform: none !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  min-height: 48px !important;
+  padding: 10px 15px !important;
+}
+
+.mainTabContainer .MuiButtonBase-root.MuiTab-root.Mui-selected {
+  position: absolute;
+  color: #0071ce !important;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /* border-top: 1px solid #0071CE;
+    border-left: 1px solid #0071CE;
+    border-right: 1px solid #0071CE; */
+  background: #ffffff;
+  position: relative;
+  /* margin-bottom: -1px; */
+  z-index: 99;
+}
+
+.mainTabContainer .MuiButtonBase-root.MuiTab-root.Mui-selected svg path {
+  stroke: #0071ce !important;
+}
+
+.mainTabContainer .MuiTabs-indicator {
+  display: none !important;
+}
+
+.tabsContentContainer {
+  background-color: #ffffff;
+  padding: 10px;
+}
+.modalTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #f3f7fe;
+}
+
+
