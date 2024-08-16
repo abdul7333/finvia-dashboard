@@ -194,4 +194,4 @@ export const ClientComplaintsContextProvider = ({ children }: ClientComplaintsCo
   );
 };
 
-export const useclientComplaintsContext = () => useContext(ClientComplaintsContext);
+export const useClientComplaintsContext = () => useContext(ClientComplaintsContext);

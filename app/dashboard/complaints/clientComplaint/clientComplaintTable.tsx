@@ -14,7 +14,7 @@ import { Box, Button, ClickAwayListener, TablePagination } from "@mui/material";
 import { useDebounce } from "@/utils/useDebounceHook";
 import styles from '../../dashboard.module.css'
 import Image from "next/image";
-import { useclientComplaintsContext } from "./context/clientComplaintContext";
+import { useClientComplaintsContext } from "./context/clientComplaintContext";
 import { ClientComplaint } from "./clientComplaintData";
 import AddClientComplaint from "./context/AddclientComplaint";
 import EditClientComplaints from "./context/EditclientComplaint";
@@ -37,7 +37,7 @@ const ClientComplaintTable = () => {
         UpdateClientComplaint,
         totalClientComplaint,
         myPermissions,
-    } = useclientComplaintsContext();
+    } = uselientComplaintsContext();
 
 
     const [isSearch, setIsSearch] = useState(false);
