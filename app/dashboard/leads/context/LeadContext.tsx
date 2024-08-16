@@ -118,7 +118,7 @@ export const LeadContextProvider = ({ children }: LeadContextProps) => {
 
     const createLead = async (val: Lead) => {
         try {
-            const response = await fetch("${process.env.NEXT_PUBLIC_API_URL}/leads/createLead", {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/leads/createLead`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
